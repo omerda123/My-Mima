@@ -12,4 +12,6 @@ class Songs(models.Model):
 
 class Facts(models.Model):
     song_id = models.ForeignKey(Songs, on_delete=models.CASCADE)
-    fact = models.TextField()
+    fact = models.TextField(default="")
+    date_added = models.DateField(null=True)
+    author = models.CharField(max_length=200, default="")
