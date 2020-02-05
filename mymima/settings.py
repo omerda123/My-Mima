@@ -75,9 +75,9 @@ WSGI_APPLICATION = 'mymima.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mima',
-        'USER': 'postgres',
-        'PASSWORD': 'IBStech1!',
+        'NAME': 'my_mima',
+        'USER': 'my_mima',
+        'PASSWORD': 'my_mima',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }

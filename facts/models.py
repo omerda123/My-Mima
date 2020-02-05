@@ -1,17 +1,19 @@
 from django.db import models
 
 
-class Artists(models.Model):
+class Artist(models.Model):
     name = models.CharField(max_length=200)
+    mima_id = models.IntegerField()
 
 
-class Songs(models.Model):
-    artist_id = models.ForeignKey(Artists, on_delete=models.CASCADE)
+class Song(models.Model):
+    artist = models.ForeignKey(Artist, on_delete=models.CASCADE)
     name = models.CharField(max_length=200)
+    mima_id = models.IntegerField()
 
 
-class Facts(models.Model):
-    song_id = models.ForeignKey(Songs, on_delete=models.CASCADE)
+class Fact(models.Model):
+    song = models.ForeignKey(Song, on_delete=models.CASCADE)
     fact = models.TextField(default="")
-    date_added = models.DateField(null=True)
+    date_created = models.DateField(null=True)
     author = models.CharField(max_length=200, default="")
