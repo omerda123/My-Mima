@@ -78,3 +78,19 @@ def songs_letter(request, letter):
 
     }
     return render(request, 'facts/artist_letter.html', context)
+
+
+def search_result(request):
+    if request.method == 'POST':
+        q = request.POST['search']
+        print(q)
+        Artists_result = Artist.objects.filter(name__contains=q)
+        songs_result = Song.objects.filter(name__contains=q)
+        facts_result = Fact.objects.filter(fact__contains=q)
+        context = {
+            'artists': Artists_result,
+            'songs': songs_result,
+            'facts': facts_result,
+            'letters': LETTERS,
+        }
+    return render(request, 'facts/search_result.html', context)

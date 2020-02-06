@@ -42,11 +42,11 @@
         </a>
 <p>
 
-
-<form action=" search_result.php" method="post" name="searchIndex">
-    <input type="text" align="right" name="search"/>
-    <input type="submit" value="הולך מחפשת" name="search_btn"/>
-</form>
+                <form action="/search/" method="POST">
+                            {% csrf_token %}
+                            <input type="text" align="right" name="search" value=""/>
+                            <input type="submit" value="הולך מחפשת" name="search_btn"/>
+                        </form>
 
 <p>
     דפדף לפי שם אמן:

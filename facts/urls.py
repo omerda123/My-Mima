@@ -10,5 +10,6 @@ urlpatterns = [
     path('artist/<str:letter>/', views.artist_letter, name="artist-page"),
     path('song/<int:song_id>', views.facts_page, name="artist-page"),
     path('song/<str:letter>', views.songs_letter, name="artist"),
+    path('search/', views.search_result, name="artist"),
     path('crawler/', views.crawler_view, name="crawler")
 ]
