@@ -36,7 +36,6 @@ def artist_letter(request, letter):
     context = {
         'artists': letter_artists,
         'letters': LETTERS
-
     }
     return render(request, 'facts/artist_letter.html', context)
 
@@ -50,3 +49,15 @@ def artist_page(request, artist_id):
         'songs': songs
     }
     return render(request, 'facts/artist_page.html', context)
+
+
+def facts_page(request, song_id):
+    facts = Fact.objects.filter(song_id=song_id)
+    song = Song.objects.get(id=song_id)
+    context = {
+        'facts': facts,
+        'song': song.name,
+        'artist': song.artist.name
+
+    }
+    return render(request, 'facts/fact_page.html', context)

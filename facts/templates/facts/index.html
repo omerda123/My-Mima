@@ -66,28 +66,9 @@
 
 <table border="0">
     <tr>
-        <td bgcolor="#FFCCCC"><a href="song_letter.php?let=%D7%90"> א </a></td>
-        <td bgcolor="#FFCCCC"><a href="song_letter.php?let=%D7%91"> ב </a></td>
-        <td bgcolor="#FFCCCC"><a href="song_letter.php?let=%D7%92"> ג </a></td>
-        <td bgcolor="#FFCCCC"><a href="song_letter.php?let=%D7%93"> ד </a></td>
-        <td bgcolor="#FFCCCC"><a href="song_letter.php?let=%D7%94"> ה </a></td>
-        <td bgcolor="#FFCCCC"><a href="song_letter.php?let=%D7%95"> ו </a></td>
-        <td bgcolor="#FFCCCC"><a href="song_letter.php?let=%D7%96"> ז </a></td>
-        <td bgcolor="#FFCCCC"><a href="song_letter.php?let=%D7%97"> ח </a></td>
-        <td bgcolor="#FFCCCC"><a href="song_letter.php?let=%D7%98"> ט </a></td>
-        <td bgcolor="#FFCCCC"><a href="song_letter.php?let=%D7%99"> י </a></td>
-        <td bgcolor="#FFCCCC"><a href="song_letter.php?let=%D7%9B"> כ </a></td>
-        <td bgcolor="#FFCCCC"><a href="song_letter.php?let=%D7%9C"> ל </a></td>
-        <td bgcolor="#FFCCCC"><a href="song_letter.php?let=%D7%9E"> מ </a></td>
-        <td bgcolor="#FFCCCC"><a href="song_letter.php?let=%D7%A0"> נ </a></td>
-        <td bgcolor="#FFCCCC"><a href="song_letter.php?let=%D7%A1"> ס </a></td>
-        <td bgcolor="#FFCCCC"><a href="song_letter.php?let=%D7%A2"> ע </a></td>
-        <td bgcolor="#FFCCCC"><a href="song_letter.php?let=%D7%A4"> פ </a></td>
-        <td bgcolor="#FFCCCC"><a href="song_letter.php?let=%D7%A6"> צ </a></td>
-        <td bgcolor="#FFCCCC"><a href="song_letter.php?let=%D7%A7"> ק </a></td>
-        <td bgcolor="#FFCCCC"><a href="song_letter.php?let=%D7%A8"> ר </a></td>
-        <td bgcolor="#FFCCCC"><a href="song_letter.php?let=%D7%A9"> ש </a></td>
-        <td bgcolor="#FFCCCC"><a href="song_letter.php?let=%D7%AA"> ת </a></td>
+              {% for letter in letters %}
+            <td bgcolor="#FFCCC"><a href="/song/{{ letter }}"> {{ letter }} </a></td>
+        {% endfor %}
     </tr>
 </table>
 
