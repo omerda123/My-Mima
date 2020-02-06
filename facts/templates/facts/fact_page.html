@@ -1,4 +1,3 @@
-
 {% load static %}
 
 
@@ -8,34 +7,86 @@
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
 
-  <!-- start Mixpanel --><script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
-0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+<!-- start Mixpanel -->
+<script type="text/javascript">(function (e, a) {
+    if (!a.__SV) {
+        var b = window;
+        try {
+            var c, l, i, j = b.location, g = j.hash;
+            c = function (a, b) {
+                return (l = a.match(RegExp(b + "=([^&]*)"))) ? l[1] : null
+            };
+            g && c(g, "state") && (i = JSON.parse(decodeURIComponent(c(g, "state"))), "mpeditor" === i.action && (b.sessionStorage.setItem("_mpcehash", g), history.replaceState(i.desiredHash || "", e.title, j.pathname + j.search)))
+        } catch (m) {
+        }
+        var k, h;
+        window.mixpanel = a;
+        a._i = [];
+        a.init = function (b, c, f) {
+            function e(b, a) {
+                var c = a.split(".");
+                2 == c.length && (b = b[c[0]], a = c[1]);
+                b[a] = function () {
+                    b.push([a].concat(Array.prototype.slice.call(arguments,
+                        0)))
+                }
+            }
+
+            var d = a;
+            "undefined" !== typeof f ? d = a[f] = [] : f = "mixpanel";
+            d.people = d.people || [];
+            d.toString = function (b) {
+                var a = "mixpanel";
+                "mixpanel" !== f && (a += "." + f);
+                b || (a += " (stub)");
+                return a
+            };
+            d.people.toString = function () {
+                return d.toString(1) + ".people (stub)"
+            };
+            k = "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+            for (h = 0; h < k.length; h++) e(d, k[h]);
+            a._i.push([b, c, f])
+        };
+        a.__SV = 1.2;
+        b = e.createElement("script");
+        b.type = "text/javascript";
+        b.async = !0;
+        b.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+        c = e.getElementsByTagName("script")[0];
+        c.parentNode.insertBefore(b, c)
+    }
+})(document, window.mixpanel || []);
 mixpanel.init("1c4a34cd22c96f9ae2299ceaad692e5f");</script><!-- end Mixpanel -->
 
 <head>
-  <!--- responsive design for mobile 2018-09-04 -->
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="HandheldFriendly" content="true">
+    <!--- responsive design for mobile 2018-09-04 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
 
-<script src="//cdn.optimizely.com/js/2176600186.js"></script>
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <script src="//cdn.optimizely.com/js/2176600186.js"></script>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
 
-<meta property="fb:admins" content="100002232956733" />
+    <meta property="fb:admins" content="100002232956733"/>
 
-<link rel="shortcut icon" href="images/favicon.ico" />
-<link rel="alternate" type="application/rss+xml" title="Mima RSS" href="rss.php" />
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <link rel="alternate" type="application/rss+xml" title="Mima RSS" href="rss.php"/>
 
-<style><!--
-body,td,a,p{font-family:arial,sans-serif;}
-//-->
-</style>
+    <style><!--
+    body, td, a, p {
+        font-family: arial, sans-serif;
+    }
 
-<title> מימה - אבי גרייניק - יש מי שאוהב </title>
-  <!--spot.im
-  <script type="text/javascript">!function(t,e,n){function a(t){var a=e.createElement("script");a.type="text/javascript",a.async=!1,a.src=("https:"===e.location.protocol?"https":"http")+":"+n,(t||e.body||e.head).appendChild(a)}function o(){var t=e.getElementsByTagName("script"),n=t[t.length-1];return n.parentNode} var p=o();t.spotId="sp_DUk6M36D",t.parentElement=p,a(p)}(window.SPOTIM={},document,"//www.spot.im/launcher/bundle.js");</script>
-  <!--end spot.im-->
+    /
+    /
+    -->
+    </style>
+
+    <title> מימה - אבי גרייניק - יש מי שאוהב </title>
+    <!--spot.im
+    <script type="text/javascript">!function(t,e,n){function a(t){var a=e.createElement("script");a.type="text/javascript",a.async=!1,a.src=("https:"===e.location.protocol?"https":"http")+":"+n,(t||e.body||e.head).appendChild(a)}function o(){var t=e.getElementsByTagName("script"),n=t[t.length-1];return n.parentNode} var p=o();t.spotId="sp_DUk6M36D",t.parentElement=p,a(p)}(window.SPOTIM={},document,"//www.spot.im/launcher/bundle.js");</script>
+    <!--end spot.im-->
 </head>
 
 <body>
@@ -44,241 +95,285 @@ body,td,a,p{font-family:arial,sans-serif;}
 
 
 <table width="100%">
-<tr>
-<td>
-<table>
-<tr>
-    <td>
-    <a href="/">
-     <img src="{% static 'images/logo.gif' %}"   alt="" border=0 />
-    </a>
-    </td>
-             <td align="right">
-    <!-- old search -->
-     <form action="search_result.php" method="post" name="searchIndexHead">
-    <input type="text" align="right" name="search" value=""/>
-    <input type="submit" value="הולך מחפשת" name="search_btn"/>
-    </form>
-      </td>
-      <!-- small pnyxe -->
-    <td>&nbsp
-    &nbsp
-    &nbsp
-    &nbsp
-    &nbsp
-    &nbsp
-    &nbsp
-    &nbsp&nbsp
-    &nbsp
-    &nbsp
-    &nbsp
-    &nbsp
-    &nbsp
-    &nbsp
-    &nbsp </td>
-    <td/>
-    <td/>
-    <td align="left">
-    &nbsp
-    &nbsp
-    &nbsp
-    &nbsp
-    &nbsp
-    &nbsp
-    &nbsp
-    &nbsp
-    </td>
-    <!-- end small pnyxe-->
-</tr>
-  </table>
-</td>
-    <td>
-    &nbsp
-    &nbsp
-    </td>
-    <td>
-            </td>
-</tr>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td>
+                        <a href="/">
+                            <img src="{% static 'images/logo.gif' %}" alt="" border=0/>
+                        </a>
+                    </td>
+                    <td align="right">
+                        <!-- old search -->
+                        <form action="search_result.php" method="post" name="searchIndexHead">
+                            <input type="text" align="right" name="search" value=""/>
+                            <input type="submit" value="הולך מחפשת" name="search_btn"/>
+                        </form>
+                    </td>
+                    <!-- small pnyxe -->
+                    <td>&nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp&nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                    </td>
+                    <td/>
+                    <td/>
+                    <td align="left">
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                    </td>
+                    <!-- end small pnyxe-->
+                </tr>
+            </table>
+        </td>
+        <td>
+            &nbsp
+            &nbsp
+        </td>
+        <td>
+        </td>
+    </tr>
 </table>
 <table>
-<tr>
-   <table><tr><td>
-     חפש לפי שם אומן:
-     </td>
-<td bgcolor="#CCFFCC" ><a href="artist_letter.php?let=%D7%90"> א </a></td>
-<td bgcolor="#CCFFCC" ><a href="artist_letter.php?let=%D7%91"> ב </a></td>
-<td bgcolor="#CCFFCC" ><a href="artist_letter.php?let=%D7%92"> ג </a></td>
-<td bgcolor="#CCFFCC" ><a href="artist_letter.php?let=%D7%93"> ד </a></td>
-<td bgcolor="#CCFFCC" ><a href="artist_letter.php?let=%D7%94"> ה </a></td>
-<td bgcolor="#CCFFCC" ><a href="artist_letter.php?let=%D7%95"> ו </a></td>
-<td bgcolor="#CCFFCC" ><a href="artist_letter.php?let=%D7%96"> ז </a></td>
-<td bgcolor="#CCFFCC" ><a href="artist_letter.php?let=%D7%97"> ח </a></td>
-<td bgcolor="#CCFFCC" ><a href="artist_letter.php?let=%D7%98"> ט </a></td>
-<td bgcolor="#CCFFCC" ><a href="artist_letter.php?let=%D7%99"> י </a></td>
-<td bgcolor="#CCFFCC" ><a href="artist_letter.php?let=%D7%9B"> כ </a></td>
-<td bgcolor="#CCFFCC" ><a href="artist_letter.php?let=%D7%9C"> ל </a></td>
-<td bgcolor="#CCFFCC" ><a href="artist_letter.php?let=%D7%9E"> מ </a></td>
-<td bgcolor="#CCFFCC" ><a href="artist_letter.php?let=%D7%A0"> נ </a></td>
-<td bgcolor="#CCFFCC" ><a href="artist_letter.php?let=%D7%A1"> ס </a></td>
-<td bgcolor="#CCFFCC" ><a href="artist_letter.php?let=%D7%A2"> ע </a></td>
-<td bgcolor="#CCFFCC" ><a href="artist_letter.php?let=%D7%A4"> פ </a></td>
-<td bgcolor="#CCFFCC" ><a href="artist_letter.php?let=%D7%A6"> צ </a></td>
-<td bgcolor="#CCFFCC" ><a href="artist_letter.php?let=%D7%A7"> ק </a></td>
-<td bgcolor="#CCFFCC" ><a href="artist_letter.php?let=%D7%A8"> ר </a></td>
-<td bgcolor="#CCFFCC" ><a href="artist_letter.php?let=%D7%A9"> ש </a></td>
-<td bgcolor="#CCFFCC" ><a href="artist_letter.php?let=%D7%AA"> ת </a></td>
-<td>&nbsp&nbsp </td><td>
-     חפש לפי שם שיר:
-     </td>
-<td bgcolor="#EDF3FE"><a href="song_letter.php?let=%D7%90"> א </a></td>
-<td bgcolor="#EDF3FE"><a href="song_letter.php?let=%D7%91"> ב </a></td>
-<td bgcolor="#EDF3FE"><a href="song_letter.php?let=%D7%92"> ג </a></td>
-<td bgcolor="#EDF3FE"><a href="song_letter.php?let=%D7%93"> ד </a></td>
-<td bgcolor="#EDF3FE"><a href="song_letter.php?let=%D7%94"> ה </a></td>
-<td bgcolor="#EDF3FE"><a href="song_letter.php?let=%D7%95"> ו </a></td>
-<td bgcolor="#EDF3FE"><a href="song_letter.php?let=%D7%96"> ז </a></td>
-<td bgcolor="#EDF3FE"><a href="song_letter.php?let=%D7%97"> ח </a></td>
-<td bgcolor="#EDF3FE"><a href="song_letter.php?let=%D7%98"> ט </a></td>
-<td bgcolor="#EDF3FE"><a href="song_letter.php?let=%D7%99"> י </a></td>
-<td bgcolor="#EDF3FE"><a href="song_letter.php?let=%D7%9B"> כ </a></td>
-<td bgcolor="#EDF3FE"><a href="song_letter.php?let=%D7%9C"> ל </a></td>
-<td bgcolor="#EDF3FE"><a href="song_letter.php?let=%D7%9E"> מ </a></td>
-<td bgcolor="#EDF3FE"><a href="song_letter.php?let=%D7%A0"> נ </a></td>
-<td bgcolor="#EDF3FE"><a href="song_letter.php?let=%D7%A1"> ס </a></td>
-<td bgcolor="#EDF3FE"><a href="song_letter.php?let=%D7%A2"> ע </a></td>
-<td bgcolor="#EDF3FE"><a href="song_letter.php?let=%D7%A4"> פ </a></td>
-<td bgcolor="#EDF3FE"><a href="song_letter.php?let=%D7%A6"> צ </a></td>
-<td bgcolor="#EDF3FE"><a href="song_letter.php?let=%D7%A7"> ק </a></td>
-<td bgcolor="#EDF3FE"><a href="song_letter.php?let=%D7%A8"> ר </a></td>
-<td bgcolor="#EDF3FE"><a href="song_letter.php?let=%D7%A9"> ש </a></td>
-<td bgcolor="#EDF3FE"><a href="song_letter.php?let=%D7%AA"> ת </a></td>
- </tr></table> <p><table width="100%" cellpadding="2" cellspacing="0" frame="above">
-<tr>
-<td bgcolor="#800000">
-<font color="white"> </font>
-</td>
-</tr>
+    <tr>
+        <table>
+            <tr>
+                <td>
+                    חפש לפי שם אומן:
+                </td>
+                {% for letter in letters %}
+                    <td bgcolor="#CCFFCC"><a href="{{ url_prefix }}{{ letter }}"> {{ letter }} </a></td>
+                {% endfor %}
+                <td>&nbsp&nbsp</td>
+                <td>
+                    חפש לפי שם שיר:
+                </td>
+                 {% for letter in letters %}
+
+                    <td bgcolor="#EDF3FE"><a href="../../song/{{ letter }}"> {{ letter }} </a></td>
+                {% endfor %}
+            </tr>
+        </table>
+        <p>
+        <table width="100%" cellpadding="2" cellspacing="0" frame="above">
+            <tr>
+                <td bgcolor="#800000">
+                    <font color="white"> </font>
+                </td>
+            </tr>
+        </table>
+
+
+        <font size="+5" face="arial">{{ song }}</font>
+        <br>
+        <font size="+2" face="arial">{{ artist }}</font>
+        <p>
+
+            <table border=0 align=center width="60%" cellpadding="8">
+
+                {% for fact in facts %}
+                    <tr bgcolor="#CCFFCC">
+                        <td>{{ fact.fact }}<br><font size=-1> נכתב ע"י {{ fact.author }} </font>
+                        </td>
+                    </tr>
+                {% endfor %}
+
+        <p>
+    <tr>
+        <td>
+            <center>
+                <div id="fb-root"></div>
+                <script>(function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) {
+                        return;
+                    }
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "//connect.facebook.net/en_US/all.js#appId=286700741346719&xfbml=1";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+
+                <div class="fb-like" data-send="true" data-layout="button_count" data-show-faces="false"
+                     data-font="arial"></div>
+            </center>
+        </td>
+    </tr>
 </table>
 
+<!-- spot.im
+  <div class="spot-im-frame-inpage" data-post-id="1199"></div>  -->
 
-<font size="+5" face="arial">{{ song }}</font>
-<br>
-<font size="+2" face="arial">{{ artist }}</font>
-<p>
-
-<table border=0 align=center width="60%" cellpadding="8">
-
-    {% for fact in facts %}
-<tr bgcolor="#CCFFCC"><td>{{ fact.fact }}<br><font size=-1> נכתב ע"י {{ fact.author}} </font>
-</td></tr>
-    {% endfor %}
-
-<p>
-<tr><td>
 <center>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#appId=286700741346719&xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
-<div class="fb-like" data-send="true" data-layout="button_count" data-show-faces="false" data-font="arial"></div>
-</center>
-</td></tr>
-</table>
-
-  <!-- spot.im
-    <div class="spot-im-frame-inpage" data-post-id="1199"></div>  -->
-
-   <center>
-
-<a href="artist_page.php?artist_id=354"> שירים נוספים של אבי גרייניק </a> &nbsp
-<a href="add_fact.php?song_id=1199"> הוסף עובדה חדשה </a> &nbsp
+    <a href="artist_page.php?artist_id=354"> שירים נוספים של אבי גרייניק </a> &nbsp
+    <a href="add_fact.php?song_id=1199"> הוסף עובדה חדשה </a> &nbsp
 
 
+    <!-- <a href="ask.php"> שאל את מימה </a> &nbsp; -->
+    <a href="questions.php">שאלות ללא תשובות </a> &nbsp;
+    <a href="last_updates.php"> מה חדש </a> &nbsp;
+    <a href="random.php"><b> תפתיעי אותי </b></a> &nbsp;
 
-<!-- <a href="ask.php"> שאל את מימה </a> &nbsp; -->
-<a href="questions.php">שאלות ללא תשובות </a> &nbsp;
-<a href="last_updates.php"> מה חדש </a> &nbsp;
-<a href="random.php"><b> תפתיעי אותי </b></a> &nbsp;
+    <a href="."> דף ראשי </a>
+    <p>
+        <!-- FB comments
+        <div class="fb-comments" data-num-posts="5" data-width="500"></div>
+        -->
+    <p>
 
-<a href="."> דף ראשי </a>
-<p>
-<!-- FB comments
-<div class="fb-comments" data-num-posts="5" data-width="500"></div>
--->
-<p>
-
-<script type="text/javascript"><!--
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- מימה-חדש -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-9483899023691151"
-     data-ad-slot="8123488267"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!--
-<p>
-עקבו אחרי מימה ב
-<a href="http://www.facebook.com/pages/mymh/339168511576" target="_blank"><img src="images/MIfacebook.jpg" border="0" align="top"></a>
--->
-<p>
-<font size="-2">
-  <a href="rss.php"> RSS</a> &nbsp;
-  <a href="term.php"> תנאי שימוש</a> &nbsp;
-  <a href="http://www.tipul.me" target="_blank"> פסיכולוגית</a> &nbsp;
-  <a href="http://www.tipul.me" target="_blank"> פסיכולוג </a> &nbsp;
-  <a href="todot.php"> תודות</a> &nbsp;
-<a href="contact.php"> צור קשר</a>
-</font>
-<br>
-מימה, 2020</center>
+        <script type="text/javascript"><
+        !--
+        < script
+        async
+        src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" ></script>
+        <!-- מימה-חדש -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:728px;height:90px"
+             data-ad-client="ca-pub-9483899023691151"
+             data-ad-slot="8123488267"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <!--
+        <p>
+        עקבו אחרי מימה ב
+        <a href="http://www.facebook.com/pages/mymh/339168511576" target="_blank"><img src="images/MIfacebook.jpg" border="0" align="top"></a>
+        -->
+    <p>
+        <font size="-2">
+            <a href="rss.php"> RSS</a> &nbsp;
+            <a href="term.php"> תנאי שימוש</a> &nbsp;
+            <a href="http://www.tipul.me" target="_blank"> פסיכולוגית</a> &nbsp;
+            <a href="http://www.tipul.me" target="_blank"> פסיכולוג </a> &nbsp;
+            <a href="todot.php"> תודות</a> &nbsp;
+            <a href="contact.php"> צור קשר</a>
+        </font>
+        <br>
+        מימה, 2020</center>
 
 <!-- analytics -->
 <script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-2162706-10']);
-  _gaq.push(['_trackPageview']);
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2162706-10']);
+    _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
 
 </script>
 
 
-<!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+<!-- start Mixpanel -->
+<script type="text/javascript">(function (e, b) {
+    if (!b.__SV) {
+        var a, f, i, g;
+        window.mixpanel = b;
+        b._i = [];
+        b.init = function (a, e, d) {
+            function f(b, h) {
+                var a = h.split(".");
+                2 == a.length && (b = b[a[0]], h = a[1]);
+                b[h] = function () {
+                    b.push([h].concat(Array.prototype.slice.call(arguments, 0)))
+                }
+            }
+
+            var c = b;
+            "undefined" !== typeof d ? c = b[d] = [] : d = "mixpanel";
+            c.people = c.people || [];
+            c.toString = function (b) {
+                var a = "mixpanel";
+                "mixpanel" !== d && (a += "." + d);
+                b || (a += " (stub)");
+                return a
+            };
+            c.people.toString = function () {
+                return c.toString(1) + ".people (stub)"
+            };
+            i = "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+            for (g = 0; g < i.length; g++) f(c, i[g]);
+            b._i.push([a, e, d])
+        };
+        b.__SV = 1.2;
+        a = e.createElement("script");
+        a.type = "text/javascript";
+        a.async = !0;
+        a.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+        f = e.getElementsByTagName("script")[0];
+        f.parentNode.insertBefore(a, f)
+    }
+})(document, window.mixpanel || []);
 mixpanel.init("1c4a34cd22c96f9ae2299ceaad692e5f");</script><!-- end Mixpanel -->
 
 <!-- Facebook Pixel Code -->
 <script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window,
+        document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '1726291714306894');
-fbq('track', "PageView");</script>
+    fbq('init', '1726291714306894');
+    fbq('track', "PageView");</script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1726291714306894&ev=PageView&noscript=1"
+               src="https://www.facebook.com/tr?id=1726291714306894&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
 
 
 </body>
-  <!-- Oribi.io -->
-  <script type="application/javascript">
-  (function(b, o, n, g, s, r, c) { if (b[s]) return; b[s] = {}; b[s].scriptToken = "XzU3NzIxMzcwNQ"; r = o.createElement(n); c = o.getElementsByTagName(n)[0]; r.async = 1; r.src = g; r.id = s + n; c.parentNode.insertBefore(r, c); })(window, document, "script", "//cdn.oribi.io/XzU3NzIxMzcwNQ/oribi.js", "ORIBI");
+<!-- Oribi.io -->
+<script type="application/javascript">
+    (function (b, o, n, g, s, r, c) {
+        if (b[s]) return;
+        b[s] = {};
+        b[s].scriptToken = "XzU3NzIxMzcwNQ";
+        r = o.createElement(n);
+        c = o.getElementsByTagName(n)[0];
+        r.async = 1;
+        r.src = g;
+        r.id = s + n;
+        c.parentNode.insertBefore(r, c);
+    })(window, document, "script", "//cdn.oribi.io/XzU3NzIxMzcwNQ/oribi.js", "ORIBI");
 </script>
 </html>
 

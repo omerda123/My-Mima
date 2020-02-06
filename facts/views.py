@@ -35,7 +35,9 @@ def artist_letter(request, letter):
 
     context = {
         'artists': letter_artists,
-        'letters': LETTERS
+        'letters': LETTERS,
+        'url_prefix': '../../artist/'
+
     }
     return render(request, 'facts/artist_letter.html', context)
 
@@ -46,7 +48,9 @@ def artist_page(request, artist_id):
     print(songs)
     context = {
         'artist': artist[0],
-        'songs': songs
+        'songs': songs,
+        'letters': LETTERS,
+
     }
     return render(request, 'facts/artist_page.html', context)
 
@@ -57,7 +61,20 @@ def facts_page(request, song_id):
     context = {
         'facts': facts,
         'song': song.name,
-        'artist': song.artist.name
+        'artist': song.artist.name,
+        'letters': LETTERS,
 
     }
     return render(request, 'facts/fact_page.html', context)
+
+
+def songs_letter(request, letter):
+    letter_songs = Song.objects.filter(name__startswith=letter)
+
+    context = {
+        'artists': letter_songs,
+        'letters': LETTERS,
+        'url_prefix': ''
+
+    }
+    return render(request, 'facts/artist_letter.html', context)
