@@ -13,3 +13,7 @@ By Omer Daniel.
 * Run:
 
         pipenv install
+* Run Crawler:
+
+        python manage.py crawl
+        

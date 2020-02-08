@@ -18,7 +18,7 @@ def get_all_artists():
         soup = BeautifulSoup(html_doc, 'html.parser')
         artists = soup.findAll("a", href=re.compile("artist_page"))
         for artist in artists:
-            Artist.objects.create(name=artist.text, mima_id=artist.get('href').split("=")[1])
+            Artist.objects.get_or_create(name=artist.text, mima_id=artist.get('href').split("=")[1])
             print(artist)
 
 
@@ -30,7 +30,7 @@ def get_all_songs():
         songs_table = soup.findAll('table')[5]
         for a in songs_table.findAll('a'):
             if 'fact_page' in a['href']:
-                Song.objects.create(artist=artist, name=a.text, mima_id=a.get('href').split("=")[1])
+                Song.objects.get_or_create(artist=artist, name=a.text, mima_id=a.get('href').split("=")[1])
                 print(a)
 
 
@@ -43,5 +43,4 @@ def get_all_facts():
         for fact in songs_table.find_all("td")[:-1]:
             a = fact.text.split('נכתב ע"י')
             print(fact)
-            Fact.objects.create(song=song, fact=a[0],
-                                author=a[1] if len(a) == 2 else "")
+            Fact.objects.get_or_create(song=song, fact=a[0],author=a[1] if len(a) == 2 else "")
