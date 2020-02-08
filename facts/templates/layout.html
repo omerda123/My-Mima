@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} מימה {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'style/style.css' %}">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            <a href="/">
+                <img src="{% static 'images/logo.gif' %}" alt="" border=0/>
+            </a>
+        </div>
+        <div class="search">
+            <form action="/search/" method="POST">
+                {% csrf_token %}
+                <input type="text" align="right" name="search" value=""/>
+                <input type="submit" value="הולך מחפשת" name="search_btn"/>
+            </form>
+        </div>
+        <div class="letters">
+            <span>
+                חיפוש לפי אמן:
+                {% for letter in letters %}
+                    <span><a href="/artist/{{ letter }}"> {{ letter }} </a></span>
+                {% endfor %}
+            </span>
+            <span>
+                חיפוש לפי שם שיר:
+                {% for letter in letters %}
+                    <span><a href="/song/{{ letter }}"> {{ letter }} </a></span>
+                {% endfor %}
+            </span>
+
+        </div>
+    </div>
+    <div class="content">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+</div>
+</body>
+</html>

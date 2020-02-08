@@ -1,0 +1,49 @@
+
+.container, .search, .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.letters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    margin: 15px;
+}
+
+.letters span a {
+    text-decoration: none;
+    color: blue;
+}
+
+.container-inside {
+    width: 80vw;
+}
+
+.container-inside a {
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+}
+
+li {
+    margin: 8px;
+    list-style: none;
+}
+
+.fact{
+    display: flex;
+    flex-direction: column;
+    background-color: #CCFFCC;
+    margin: 20px;
+    padding: 5px;
+}
+.fact-author{
+    color: #000038;
+    font-style: italic;
+}

@@ -17,26 +17,14 @@ def index(request):
     return render(request, 'facts/index.html', context)
 
 
-def crawler_view(request):
-    all_artists = models.Artist.objects.all()
-    all_songs = models.Song.objects.all()
-    all_facts = models.Fact.objects.all()
-    context = {
-        'buttons': ['Get Artists', 'Get Songs', 'Get Facts'],
-        'artists': all_artists,
-        'songs': all_songs,
-        'facts': all_facts,
-    }
-    return render(request, 'facts/note_form.html', context)
-
-
 def artist_letter(request, letter):
     letter_artists = Artist.objects.filter(name__startswith=letter)
 
     context = {
         'artists': letter_artists,
         'letters': LETTERS,
-        'url_prefix': '../../artist/'
+        'url_prefix': '../../artist/',
+        'letter': letter
 
     }
     return render(request, 'facts/artist_letter.html', context)
@@ -74,7 +62,8 @@ def songs_letter(request, letter):
     context = {
         'artists': letter_songs,
         'letters': LETTERS,
-        'url_prefix': ''
+        'url_prefix': '',
+        'letter': letter
 
     }
     return render(request, 'facts/artist_letter.html', context)
@@ -92,5 +81,6 @@ def search_result(request):
             'songs': songs_result,
             'facts': facts_result,
             'letters': LETTERS,
+            'q': q
         }
     return render(request, 'facts/search_result.html', context)
